@@ -12,15 +12,8 @@ class Solution:
 
         while l1 is not None or l2 is not None or carry>0 :
 
-            if l1 is not None:
-                n1 = l1.val
-            else:
-                n1 = 0
-
-            if l2 is not None:
-                n2 = l2.val
-            else:
-                n2 = 0
+            n1 = l1.val if l1 is not None else 0
+            n2 = l2.val if l2 is not None else 0
 
             total = n1 + n2 + carry
 
